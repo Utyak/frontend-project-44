@@ -1,4 +1,6 @@
 #!/usr/bin/env node
 import greetUser from '../src/cli.js';
+import { playGame } from './brain-even.js';
 
-greetUser();
+const name = greetUser();
+playGame(name);
