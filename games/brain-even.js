@@ -14,7 +14,7 @@ const playGame = (name, rounds = 3) => {
     if ((isEven(randomNumber) && answer === 'yes') || (!isEven(randomNumber) && answer === 'no')) {
       console.log('Correct!');
     } else {
-      console.log(`${answer} is wrong answer ;(. Correct answer was ${isEven(randomNumber) ? 'yes' : 'no'}.`);
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${isEven(randomNumber) ? 'yes' : 'no'}'.`);
       console.log(`Let's try again, ${name}`);
       return;
     }
