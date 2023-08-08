@@ -1,6 +1,9 @@
 const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 const operators = ['+', '-', '*'];
+const MIN_NUM = 1;
+const MAX_NUM = 25;
+
 const calculate = (num1, num2, operator) => {
   switch (operator) {
     case '+':
@@ -17,8 +20,8 @@ const calculate = (num1, num2, operator) => {
 const game = {
   description: 'What is the result of the expression?',
   round: () => {
-    const num1 = getRandomInt(1, 25);
-    const num2 = getRandomInt(1, 25);
+    const num1 = getRandomInt(MIN_NUM, MAX_NUM);
+    const num2 = getRandomInt(MIN_NUM, MAX_NUM);
     const operator = operators[getRandomInt(0, operators.length - 1)];
     const question = `${num1} ${operator} ${num2}`;
     const correctAnswer = calculate(num1, num2, operator).toString();
