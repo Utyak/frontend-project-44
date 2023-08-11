@@ -1,5 +1,6 @@
+import getRandomInt from '../utils.js';
+
 const gcd = (a, b) => (b === 0 ? a : gcd(b, a % b));
-const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 const MIN_NUM = 1;
 const MAX_NUM = 100;

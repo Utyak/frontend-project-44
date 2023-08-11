@@ -1,5 +1,6 @@
+import getRandomInt from '../utils.js';
+
 const isEven = (num) => num % 2 === 0;
-const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 const MIN_NUM = 1;
 const MAX_NUM = 100;

@@ -1,4 +1,4 @@
-const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+import getRandomInt from '../utils.js';
 
 const MIN_LENGTH = 5;
 const MAX_LENGTH = 10;

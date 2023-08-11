@@ -1,3 +1,5 @@
+import getRandomInt from '../utils.js';
+
 const isPrime = (num) => {
   if (num <= 1) {
     return false;
@@ -11,8 +13,6 @@ const isPrime = (num) => {
 
   return true;
 };
-
-const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 const MIN_NUM = 2;
 const MAX_NUM = 100;
