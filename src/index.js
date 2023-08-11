@@ -1,6 +1,8 @@
 import readlineSync from 'readline-sync';
+import greetUser from './cli.js';
 
-const playGame = (game, name, rounds = 3) => {
+const playGame = (game, rounds = 3) => {
+  const name = greetUser();
   console.log(game.description);
 
   for (let i = 0; i < rounds; i += 1) {
